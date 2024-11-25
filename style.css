@@ -1,29 +1,37 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
   
   
 
 
-  .voting-machine {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 3px solid #ccc;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #e0e0e0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 1100px;
-    height: 700px;
-  }
+.voting-machine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 1100px;
+  height: 700px;
   
+}
+
+.logo1{
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  margin-top: -550px;
+  margin-left: 150px;
+}
   .screen {
     width: 55%;
     border: 2px solid #333;
@@ -33,6 +41,7 @@ body {
     position: relative;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
     height: 60%;
+    margin-left: -430px;
   }
   
   .training {
@@ -61,7 +70,7 @@ body {
     width: 95px;
     height: 110px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.8em;
     border: 2px solid #666;
     border-radius: 10px;
     background-color: #fff;
@@ -87,62 +96,67 @@ body {
     font-size: 0.8em;
     text-align: center;
   }
-  
-  .keypad {
-    width: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-left: 20px;
-  }
-  
-  .key {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  .key0{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
 
-  }
-  .key:hover {
-    background-color: #555;
+  .keypad {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Botões em 3 colunas */
+    gap: 15px; /* Espaçamento entre os botões */
+    justify-content: center;
+    margin-top: 110px;
   }
   
-  .actions {
+  .key,
+  .key0 {
+    width: 120px;
+    height: 100px;
+    margin-left: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px rgb(0, 0, 0); 
+  }
+  .key:active,
+  .key0:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+  }
+  
+    .key:hover,
+    .key0:hover {
+      background-color: #555;
+    }
+
+  
+  /* Botão 0 centralizado */
+  .key0 {
+    grid-column: 2 / 3; /* Centraliza o botão "0" */
+  }
+  
+  /* Estilo para os botões de ação */
+  .actions {
+    grid-column: span 3; /* Faz os botões ocuparem toda a largura */
+    display: flex;
+    justify-content: space-around; /* Espaçamento igual entre os botões */
+    margin-top: 20px; /* Distância entre os números e os botões de ação */
   }
   
   .white-button,
   .orange-button,
   .green-button {
-    width: 100px;
-    height: 50px;
-    font-size: 1em;
+    width: 180px; /* Largura consistente para os botões */
+    height: 90px;
+    margin-left: 28px;
+    font-size: 1.5em;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -153,6 +167,7 @@ body {
   
   .white-button {
     background-color: #bbb;
+    box-shadow: 0 10px #7c7c7c;
   }
   
   .white-button:hover {
@@ -160,7 +175,8 @@ body {
   }
   
   .orange-button {
-    background-color: #f80;
+    background-color: rgb(248, 157, 53);
+    box-shadow: 0 10px #ff8800;
   }
   
   .orange-button:hover {
@@ -169,6 +185,7 @@ body {
   
   .green-button {
     background-color: #4CAF50;
+    box-shadow: 0 10px #298841;
   }
   
   .green-button:hover {
@@ -181,3 +198,4 @@ body {
     transform: scale(0.95);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+  
