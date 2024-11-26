@@ -7,24 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
   <div class="voting-machine">
     <img class="logo1" src="img/cer].png" alt="logo">
     <div class="screen">
       <p class="training"> TREINAMENTO PARA O JUIZO FINAL</p>
-      <p class="role">Monarca</p>
+      <p class="role">Vice Monarca</p>
       <div class="number-input">
         <input type="text" maxlength="1" readonly>
         <input type="text" maxlength="1" readonly>
       </div>   
     </div>
 
-    
+
     <div class="keypad">
-      <a href="lideres.html">
-        <div class="key" onclick="pressKey('1')">1</div>
-      </a>
-      
+      <div class="key" onclick="pressKey('1')">1</div>
       <div class="key" onclick="pressKey('2')">2</div>
       <div class="key" onclick="pressKey('3')">3</div>
       <div class="key" onclick="pressKey('4')">4</div>
@@ -38,9 +34,7 @@
     <div class="actions">
       <button class="white-button" onclick="whiteVote()">BRANCO</button>
       <button class="orange-button" onclick="correct()">CORRIGE</button>
-      <a href="telavoto2.html">
-        <button class="green-button" onclick="confirm()">CONFIRMA</button>
-      </a>
+      <button class="green-button" onclick="confirm()">CONFIRMA</button>
     </div>
   </div>
   <script src="ajuda.js"></script>
