@@ -73,10 +73,60 @@
 }
 
 .iniciar:active {
-    box-shadow: 0 2px hsl(143, 73%, 22%); /* Reduz a sombra ao clicar */
-    transform: translateY(3px); /* Move o botão para baixo */
+    box-shadow: 0 2px hsl(143, 73%, 22%); 
+    transform: translateY(3px); 
 }
 
 .iniciar:hover {
-    background-color: #41b922; /* Cor ao passar o mouse */
+    background-color: #41b922;
+}
+@media (max-width: 768px) {
+    .logo {
+        height: 30vh; 
+    }
+
+    .simbolo {
+        width: 50vw; 
+    }
+
+    .apresentacao, .instrucoes {
+        margin-left: 3vw; 
+        font-size: 2.5vh; 
+
+    .apresentacao hr {
+        width: 90vw;
+    }
+}
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        height: 25vh; 
+        flex-direction: column; 
+    }
+
+    .simbolo {
+        width: 70vw;
+    }
+
+    .apresentacao, .instrucoes {
+        font-size: 3vh; 
+        margin-left: 2vw; 
+        text-align: center; 
+    }
+
+    .apresentacao hr {
+        width: 90vw; 
+    }
+
+    .botao1 {
+        margin-top: 6vh;
+    }
+
+    .iniciar {
+        width: 80%; 
+        padding: 12px 20px;
+        font-size: 16px; 
+    }
 }
