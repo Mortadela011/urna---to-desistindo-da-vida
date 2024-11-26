@@ -1,22 +1,22 @@
-let voteInput = document.querySelectorAll('.number-input input');
+
+
+let voteInput = document.querySelectorAll('.numero input');
 let currentInput = 0;
 
-let votos = {
-  pedroVoto: 0,  // 13
-  helderVoto: 0, // 12
-  mossmannVoto: 0, // 22
-  pietroVoto: 0, // 38
-  heirotVoto: 0  // 24
-};
 
-const numerosCandidatos = {
-  13: "pedroVoto",
-  12: "helderVoto",
-  22: "mossmannVoto",
-  38: "pietroVoto",
-  24: "heirotVoto"
-};
+var pedroVoto = 0;
+var helderVoto =0;
+var mossmannVoto=0;
+var pietroVoto= 0;
+var heirotVoto= 0;
 
+
+
+var curioVoto = 0;
+var otavioVoto = 0;
+var rafaelVoto = 0;
+var cachorroPietroVoto = 0;
+var welVoto = 0;
 
 
 function pressKey(key) {
@@ -37,49 +37,45 @@ function correct() {
 
 function confirm() {
 
+  
   let vote = Array.from(voteInput).map(input => input.value).join('');
-
-
-
   if (vote.length === 2) {
     if(vote == 13){
-      alert("Votou no pedroga. Número: "  + vote); 
-      pedroVoto++;
+      alert("Votou no curió. Número: "  + vote); 
+      curioVoto++;
     }
-    else if(vote == 12){
-      alert("Votou no Helder. Número: "  + vote); 
-      helderVoto++;
+    else if(vote == 99){
+      alert("Votou no Otávio. Número: "  + vote); 
+      otavioVoto++;
     }
     else if(vote == 22){
-      alert("Votou no Mossmann. Número: "  + vote); 
-      mossmannVoto++;
+      alert("Votou no Rafael. Número: "  + vote); 
+      rafaelVoto++;
     }
     else if(vote == 38){
-      alert("Votou no Pietro. Número: "  + vote); 
-      pietroVoto++;
+      alert("Votou no cachorro do Pietro. Número: "  + vote); 
+      cachorroPietroVoto++;
     }
     else if(vote == 24){
-      alert("Votou no Heirot. Número: "  + vote); 
-      heirotVoto++;
+      alert("Votou no WelWel. Número: "  + vote); 
+      welVoto++;
     }
     else{
       alert("Número de candidato inválido. Voto nulo"); 
-    }
+    }  
   } 
+  
   else {
     alert("Por favor, insira os dois dígitos.");
   }
   resetInput();
+
 }
 
 function resetInput() {
   voteInput.forEach(input => input.value = '');
   currentInput = 0;
 }
-
-
-
-
 
 
 console.log(`O Pedroga possuí ${pedroVoto} votos`);

@@ -11,12 +11,7 @@
   <div class="voting-machine">
     <img class="logo1" src="img/cer].png" alt="logo">
     <div class="screen">
-      <p class="training"> TREINAMENTO PARA O JUIZO FINAL</p>
-      <p class="role">Monarca</p>
-      <div class="number-input">
-        <input type="text" maxlength="1" readonly>
-        <input type="text" maxlength="1" readonly>
-      </div>   
+      <p class="training"> VOTO REALIZADO COM SUCESSO!</p>
     </div>
 
     
@@ -36,15 +31,20 @@
       <div class="key0" onclick="pressKey('0')">0</div>
     
     <div class="actions">
-      <a href="telavoto2.html">
-        <button class="white-button" onclick="whiteVote()">BRANCO</button>
-      </a>
-      <button class="orange-button" onclick="correct()">CORRIGE</button>
-      <a href="telavoto2.html">
-        <button class="green-button" onclick="confirm()">CONFIRMA</button>
-      </a>
+     
+        <button class="white-button">BRANCO</button>
+   
+      <button class="orange-button">CORRIGE</button>
+      
+        <button class="green-button">CONFIRMA</button>
+      
     </div>
   </div>
-  <script src="ajuda.js"></script>
+  <audio id="audio" src="img/confirma-urna.mp3"></audio>
+
+  <script>
+    var audio = document.getElementById('audio');
+    audio.play();
+  </script>
 </body>
 </html>

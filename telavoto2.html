@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urna Cimol</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="telavoto2.css">
 </head>
 <body>
   <div class="voting-machine">
@@ -12,7 +12,7 @@
     <div class="screen">
       <p class="training"> TREINAMENTO PARA O JUIZO FINAL</p>
       <p class="role">Vice Monarca</p>
-      <div class="number-input">
+      <div class="numero">
         <input type="text" maxlength="1" readonly>
         <input type="text" maxlength="1" readonly>
       </div>   
@@ -32,11 +32,15 @@
       <div class="key0" onclick="pressKey('0')">0</div>
     
     <div class="actions">
-      <button class="white-button" onclick="whiteVote()">BRANCO</button>
+      <a href="votos.html">
+        <button class="white-button" onclick="whiteVote()">BRANCO</button>
+      </a>
       <button class="orange-button" onclick="correct()">CORRIGE</button>
-      <button class="green-button" onclick="confirm()">CONFIRMA</button>
+      <a href="votos.html">
+        <button class="green-button" id="botao" onclick="confirm()">CONFIRMA</button>
+      </a>
     </div>
   </div>
-  <script src="ajuda.js"></script>
+  <script src="telavoto2.js"></script>
 </body>
 </html>
