@@ -59,49 +59,37 @@ function confirm() {
 
   let vote = Array.from(voteInput).map(input => input.value).join('');
 
- 
- 
- 
- 
-
-
 
   if (vote.length === 2) {
     switch (vote) {
       case "13":
-        candidatePhoto.src = "img/pedro.jfif"; // Substitua pelo caminho correto da imagem
+        candidatePhoto.src = "img/pedro.jfif"; 
         candidateName.textContent = "Votou no Pedroga";
         candidateNumber.textContent = "Número: 13";
-        votos.pedroVoto++;
         break;
 
       case "12":
-        candidatePhoto.src = "img/helder ultimate.jfif"; // Substitua pelo caminho correto da imagem
+        candidatePhoto.src = "img/helder ultimate.jfif"; 
         candidateName.textContent = "Votou no Helder";
         candidateNumber.textContent = "Número: 12";
-        votos.helderVoto++;
         break;
 
       case "22":
-        candidatePhoto.src = "img/mossman.jpg"; // Substitua pelo caminho correto da imagem
+        candidatePhoto.src = "img/mossman.jpg"; 
         candidateName.textContent = "Votou no Mossmann";
         candidateNumber.textContent = "Número: 22";
-        votos.mossmannVoto++;
         break;
 
       case "38":
-        candidatePhoto.src = "img/eu matrix.jpg"; // Substitua pelo caminho correto da imagem
+        candidatePhoto.src = "img/eu matrix.jpg"; 
         candidateName.textContent = "Votou no Pietro Tabajara";
         candidateNumber.textContent = "Número: 38";
-        votos.pietroVoto++;
         break;
 
       case "24":
-        candidatePhoto.src = "img/heitor-flor.jpg"; // Substitua pelo caminho correto da imagem
+        candidatePhoto.src = "img/heitor-flor.jpg"; 
         candidateName.textContent = "Votou no Heirot";
         candidateNumber.textContent = "Número: 24";
-        alert("Votou no Heirot.");
-        votos.heirotVoto++;
         break;
 
       default:
@@ -121,7 +109,6 @@ function confirm() {
 
   resetInput();
 }
-
 
 
 function resetInput() {

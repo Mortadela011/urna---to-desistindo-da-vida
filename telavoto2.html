@@ -16,6 +16,12 @@
         <input type="text" maxlength="1" readonly>
         <input type="text" maxlength="1" readonly>
       </div>   
+
+      <div id="candidate-info2" class="candidate-info2">
+        <img id="candidate-photo2" class="candidate-photo2" src="" alt="" style="display:none;">
+        <p id="candidate-name2" class="candidate-name2"></p>
+        <p id="candidate-number2" class="candidate-number2"></p>
+      </div>
     </div>
 
 
@@ -32,13 +38,13 @@
       <div class="key0" onclick="pressKey('0')">0</div>
     
     <div class="actions">
-      <a href="votos.html">
-        <button class="white-button" onclick="whiteVote()">BRANCO</button>
-      </a>
+      
+      <button class="white-button" onclick="whiteVote()">BRANCO</button>
+      
       <button class="orange-button" onclick="correct()">CORRIGE</button>
-      <a href="votos.html">
-        <button class="green-button" id="botao" onclick="confirm()">CONFIRMA</button>
-      </a>
+      
+      <button class="green-button" id="botao" onclick="confirmAndRedirect()">CONFIRMA</button>
+      
     </div>
   </div>
   <script src="telavoto2.js"></script>
