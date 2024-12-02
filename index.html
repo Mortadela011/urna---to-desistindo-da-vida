@@ -10,6 +10,7 @@
   
   <div class="voting-machine">
     <img class="logo1" src="img/cer].png" alt="logo">
+   
     <div class="screen">
       <p class="training"> TREINAMENTO PARA O JUIZO FINAL</p>
       <p class="role">Monarca</p>
@@ -17,12 +18,17 @@
         <input type="text" maxlength="1" readonly>
         <input type="text" maxlength="1" readonly>
       </div>   
+
+      <div id="candidate-info" class="candidate-info">
+        <img id="candidate-photo" class="candidate-photo" src="" alt="" style="display:none;">
+        <p id="candidate-name" class="candidate-name"></p>
+        <p id="candidate-number" class="candidate-number"></p>
+      </div>
+      
     </div>
 
     
     <div class="keypad">
-     
-      
       
       <div class="key" onclick="pressKey('1')">1</div>
       <div class="key" onclick="pressKey('2')">2</div>
@@ -35,15 +41,18 @@
       <div class="key" onclick="pressKey('9')">9</div>
       <div class="key0" onclick="pressKey('0')">0</div>
     
+
     <div class="actions">
-      <a href="telavoto2.html">
-        <button class="white-button" onclick="whiteVote()">BRANCO</button>
-      </a>
+      
+      <button class="white-button" onclick="whiteVote()">BRANCO</button>
+      
       <button class="orange-button" onclick="correct()">CORRIGE</button>
-      <a href="telavoto2.html">
-        <button class="green-button" onclick="confirm()">CONFIRMA</button>
-      </a>
+      
+      <button class="green-button" onclick="confirmAndRedirect()">CONFIRMA</button>
+      
     </div>
+
+    
   </div>
   <script src="ajuda.js"></script>
 </body>
