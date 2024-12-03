@@ -75,6 +75,13 @@ body {
 
 
   
+  .training {
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+    font-size: 2em;
+  }
+  
   .role {
     text-align: center;
     font-size: 2.5em;
