@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-.logo{
-    display: flex;  
-    width: 100%;
-    height: 40vh;
-    background: linear-gradient(to right,  rgb(16, 121, 6), hsl(157, 67%, 57%)); /* Direção e cores */
-    flex-direction: row;  
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-   .simbolo{
-    width: 30vw;
-   }
-}
 
 .apresentacao{
     font-size: 2vh;
